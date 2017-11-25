@@ -1,0 +1,101 @@
+name: PalificCore2
+main: net.azulian.core.main
+version: 1.0
+description: Palific's Core
+author: Toper
+commands:
+    list:
+            usage: /<command>
+            description: Nothing.
+    selector:
+            usage: /<command>
+            description: Nothing.
+    bm:
+        description: Change your build mode.
+        usage: /<command> [player]
+        aliases: [buildmode,bmode,build]
+    kaboom:
+                usage: /<command>
+                description: Nothing.
+    setspawn:
+                    usage: /<command>
+                    description: Nothing.
+    spawn:
+                    usage: /<command>
+                    description: Nothing.
+    moveitems:
+                        usage: /<command>
+                        description: Nothing.
+    toggleitems:
+                            usage: /<command>
+                            description: Nothing.
+    settings:
+                                    usage: /<command>
+                                    description: Nothing.
+
+    gmc:
+                usage: /gmc
+                description: Set your gamemode to creative.
+                aliases: gm1
+    gms:
+                usage: /gms
+                description: Set your gamemode to survival.
+                aliases: gm0
+    fly:
+                usage: /fly
+                description: Toggle fly mode.
+    gm3:
+                    usage: /gm3
+                    description: Toggle spectator mode.
+    pvp:
+                        usage: /<command>
+                        description: Toggle pvp mode.
+    killmobs:
+                            usage: /<command>
+                            description: Kill all mobs.
+    bc:
+                                usage: /<command>
+                                description: Broadcast a message.
+                                aliases: broadcast
+    heal:
+                                    usage: /<command>
+                                    description: Heal people.
+    tp:
+                                        usage: /<command>
+                                        description: Teleport to people.
+                                        aliases: teleport
+    tphere:
+                                            usage: /<command>
+                                            description: Teleport a player to you.
+    kills:
+                                            usage: /<command>
+                                            description: Get a players kills.
+    togglescoreboard:
+                                                usage: /<command>
+                                                description: Toggle your scoreboard.
+                                                aliases: togglesb
+    v:
+                                                    usage: /<command>
+                                                    description: Turn vanish on and off.
+                                                    aliases: vanish
+    rank:
+                                                        usage: /<command>
+                                                        description: Change someone's rank.
+permissions:
+  buildmode.*:
+    description: All the permissions of the Build Mode plugin.
+    children:
+      buildmode.toggle: true
+      buildmode.others: true
+  moveitems.*:
+      description: All the permissions of the Build Mode plugin.
+      children:
+        moveitems.toggle: true
+        moveitems.others: true
+  items.toggle:
+       description: Ability to turn items off.
+  minemen.admin:
+       description: Admin commands of minemen.
+  minemen.kaboom:
+      description: Access to /kaboom!
+
